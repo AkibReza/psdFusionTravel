@@ -1,367 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./dist/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="bg-[#b2b2b2] h-164">
-      <!-- Navbar -->
-      <nav class="container mx-auto py-4 px-12">
-        <div class="flex justify-between mb-6">
-          <div class="flex space-x-6">
-            <a href="#" class="text-white hover:text-gray-300">Home</a>
-            <a href="#" class="text-white hover:text-gray-300">Services</a>
-            <a href="#" class="text-white hover:text-gray-300">About Us</a>
-            <a href="#" class="text-white hover:text-gray-300">Our Clients</a>
-            <a href="#" class="text-white hover:text-gray-300">Blog</a>
-            <a href="#" class="text-white hover:text-gray-300">Contact Us</a>
-          </div>
-          <div>
-            <div class="flex">
-              <i class="fa-solid fa-phone-flip text-white my-1 mx-4"></i>
-              <h3 class="text-white">Hotline: +516 260 0598</h3>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-[#b2b2b2] h-164">
+    <!-- Navbar -->
+    <nav class="container mx-auto py-4 p-6">
+      <div class="justify-between mb-6 hidden md:flex ">
+        <div class="space-x-6">
+          <a href="#" class="text-white hover:text-gray-300">Home</a>
+          <a href="#" class="text-white hover:text-gray-300">Services</a>
+          <a href="#" class="text-white hover:text-gray-300">About Us</a>
+          <a href="#" class="text-white hover:text-gray-300">Our Clients</a>
+          <a href="#" class="text-white hover:text-gray-300">Blog</a>
+          <a href="#" class="text-white hover:text-gray-300">Contact Us</a>
+        </div>
+        <div>
+          <div class="flex">
+            <i class="fa-solid fa-phone-flip text-white my-1 mx-4"></i>
+            <h3 class="text-white">Hotline: +516 260 0598</h3>
           </div>
         </div>
-        <hr class="border-[#8795a9]" />
-      </nav>
-      <div class="my-32 flex flex-col">
-        <h1 class="text-6xl text-white mx-auto w-max my-2">Fusion Travel</h1>
-        <p class="text-xl text-white mx-auto w-max my-2">
-          Lets discover the world together
-        </p>
-        <a
-          href="#"
-          class="bg-[#fbad27] hover:bg-[#ebbe35] text-white font-bold px-12 py-3 rounded-full mx-auto my-4"
-          >Plan Your Trip</a
-        >
       </div>
-    </header>
 
-    <section id="welcome">
-      <div class="flex flex-col items-center container mx-auto py-28 px-48">
-        <h2 class="text-[#4a4a4a] text-4xl py-6">Welcome To Fusion</h2>
+      <!-- Mobile Navbar -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+      </div>
+
+      <div class="md:hidden">
+        <div id="menu"
+          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About Us</a>
+          <a href="#">Our Clients</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+
+      <hr class="border-[#8795a9]" />
+    </nav>
+    <div class="my-32 flex flex-col">
+      <h1 class="text-6xl text-white mx-auto w-max my-2">Fusion Travel</h1>
+      <p class="text-xl text-white mx-auto w-max my-2">
+        Lets discover the world together
+      </p>
+      <a href="#" class="bg-[#fbad27] hover:bg-[#ebbe35] text-white font-bold px-12 py-3 rounded-full mx-auto my-4">Plan
+        Your Trip</a>
+    </div>
+  </header>
+
+  <section id="welcome">
+    <div class="flex flex-col items-center container mx-auto py-28 max-w-5xl px-8">
+      <h2 class="text-[#4a4a4a] text-4xl py-6">Welcome To Fusion</h2>
+      <p class="text-[#4a4a4a] text-center">
+        Nam consectetur elementum neque vitae condimentum. Aenean dignissim,
+        turpis et tincidunt finibus, massa purus malesuada metus, a commodo
+        velit magna nec nibh. Donec dictum fringilla tempus. Nunc rhoncus
+        sapien lectus, non fermentum neque euismod quis. Phasellus sagittis
+        tortor in accumsan
+      </p>
+
+      <div class="flex flex-col md:flex-row md:space-x-6 py-16 ">
+        <div class="shadow">
+          <div class="px-8 py-12">
+            <i class="fa-solid fa-plane text-[#fbad27] text-4xl"></i>
+            <p class="font-bold my-2">Best Price Gurantee</p>
+            <p>
+              SpaceTeam bootstrapping user centered design sticky note
+              convergence fund parallax
+            </p>
+          </div>
+        </div>
+        <div class="shadow-xl mx-2">
+          <div class="px-8 py-12">
+            <i class="fa-solid fa-heart text-[#fbad27] text-4xl"></i>
+            <p class="font-bold my-2">Best Travel Agency</p>
+            <p>
+              User story Steve Jobs Stev Jobs iterate human-centered design
+              iterate pair progra ming 360 campaign.
+            </p>
+          </div>
+        </div>
+        <div class="shadow">
+          <div class="px-8 py-12">
+            <i class="fa-solid fa-star text-[#fbad27] text-4xl"></i>
+            <p class="font-bold my-2">Trust & Safety</p>
+            <p>
+              Thought leader cortado viral viral earned media long shadow
+              actionable insight
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="destination">
+    <div class="container mx-auto max-w-5xl px-8">
+      <hr class="text-[#b2b2b2]" />
+      <div class="flex flex-col items-center">
+        <h2 class="text-[#4a4a4a] text-4xl py-6 text-center">Find Your Destination</h2>
         <p class="text-[#4a4a4a] text-center">
-          Nam consectetur elementum neque vitae condimentum. Aenean dignissim,
-          turpis et tincidunt finibus, massa purus malesuada metus, a commodo
-          velit magna nec nibh. Donec dictum fringilla tempus. Nunc rhoncus
-          sapien lectus, non fermentum neque euismod quis. Phasellus sagittis
-          tortor in accumsan
+          Most Popular Places Are Waiting For You
         </p>
 
-        <div class="flex py-16">
-          <div class="shadow">
-            <div class="px-8 py-12">
-              <i class="fa-solid fa-plane text-[#fbad27] text-4xl"></i>
-              <p class="font-bold my-2">Best Price Gurantee</p>
-              <p>
-                SpaceTeam bootstrapping user centered design sticky note
-                convergence fund parallax
-              </p>
+        <form class="flex items-center my-6 shadow">
+          <i class="fa-solid fa-magnifying-glass p-3"></i>
+          <div class="relative w-full">
+            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"></div>
+            <input type="text" class="" placeholder="Search..." required />
+          </div>
+        </form>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+          <div class="overflow-hidden inset-0">
+            <a href="#">
+              <img src="src/img/thailand.jpg"
+                class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50" />
+            </a>
+          </div>
+          <div class="overflow-hidden inset-0">
+            <a href="#">
+              <img src="src/img/australia.jpg"
+                class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50" />
+            </a>
+          </div>
+          <div class="overflow-hidden inset-0">
+            <a href="#">
+              <img src="src/img/indonesia.jpg"
+                class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50" />
+            </a>
+          </div>
+          <div class="overflow-hidden inset-0">
+            <a href="#">
+              <img src="src/img/france.jpg"
+                class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50" />
+            </a>
+          </div>
+          <div class="overflow-hidden inset-0">
+            <a href="#">
+              <img src="src/img/malaysia.jpg"
+                class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50" />
+            </a>
+          </div>
+          <div class="overflow-hidden inset-0">
+            <a href="#">
+              <img src="src/img/UAE.jpg"
+                class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="text-[#b2b2b2]" />
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container py-12 mx-auto max-w-5xl px-8">
+      <h2 class="text-[#4a4a4a] text-4xl py-6 text-center">
+        Latest News From Blog
+      </h2>
+      <p class="text-[#4a4a4a] text-center">
+        See Whats People Are Sharing Their Thoughts
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-4 ">
+        <div>
+          <div class="flex flex-col ">
+            <img src="src/img/blog6.jpg" alt="" class="w-auto h-1/2 mb-6 object-cover aspect-square" />
+
+            <div class="flex shadow flex-col md:flex-row">
+              <div class="py-6 px-4 md:flex-1">
+                <h3 class="font-bold">
+                  Most Beautiful Place In The World - Istunbul
+                </h3>
+                <p>
+                  Venture capital food-truck minimum viable product ideate
+                  pitch deck experiential cortado affordances parallax
+                </p>
+              </div>
+              <img src="src/img/blog5.jpg" alt="" class="w-full h-auto aspect-square overflow-hidden md:flex-1" />
             </div>
           </div>
-          <div class="shadow-xl mx-2">
-            <div class="px-8 py-12">
-              <i class="fa-solid fa-heart text-[#fbad27] text-4xl"></i>
-              <p class="font-bold my-2">Best Travel Agency</p>
-              <p>
-                User story Steve Jobs Stev Jobs iterate human-centered design
-                iterate pair progra ming 360 campaign.
-              </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="flex flex-col justify-between">
+            <div class="shadow">
+              <img src="src/img/blog3.jpg" alt="" class="aspect-square my-2" />
+              <div class="py-6 px-4 flex-1">
+                <h3 class="font-bold">The Statue Of Liberty Travel</h3>
+                <p>
+                  Qualitative ship it user story grok SpaceTeam waterfall is
+                  so 2000 and late quantitative vs.
+                </p>
+              </div>
             </div>
+            <img src="src/img/blog4.jpg" alt="" class="w-full h-auto overflow-hidden" />
           </div>
-          <div class="shadow">
-            <div class="px-8 py-12">
-              <i class="fa-solid fa-star text-[#fbad27] text-4xl"></i>
-              <p class="font-bold my-2">Trust & Safety</p>
-              <p>
-                Thought leader cortado viral viral earned media long shadow
-                actionable insight
-              </p>
+
+          <div class="flex flex-col justify-between">
+            <img src="src/img/blog2.jpg" alt="" class="my-2" />
+            <div class="shadow">
+              <img src="src/img/blog1.jpg" alt="" class="w-auto h-auto aspect-square overflow-hiddens" />
+              <div class="py-6 px-4 flex-1">
+                <h3 class="font-bold">The Best Natural Paradise - Shimla</h3>
+                <p>
+                  Ship it integrate prototype fund human-centered design
+                  integrate big data convergence.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="text-center my-8">
+        <a href="#"
+          class="bg-[#fbad27] hover:bg-[#ebbe35] text-white font-bold px-12 py-3 rounded-full mx-auto my-4">Plan Your
+          Trip</a>
+      </div>
+      <hr class="text-[#b2b2b2]" />
+    </div>
+  </section>
 
-    <section id="destination">
-      <div class="container mx-auto px-48">
-        <hr class="text-[#b2b2b2]" />
-        <div class="flex flex-col items-center">
-          <h2 class="text-[#4a4a4a] text-4xl py-6">Find Your Destination</h2>
-          <p class="text-[#4a4a4a] text-center">
-            Most Popular Places Are Waiting For You
-          </p>
-
-          <form class="flex items-center my-6 shadow">
-            <i class="fa-solid fa-magnifying-glass p-3"></i>
-            <div class="relative w-full">
-              <div
-                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-              ></div>
-              <input type="text" class="" placeholder="Search..." required />
-            </div>
-          </form>
-
-          <div class="grid grid-cols-3 gap-4 mb-12">
-            <div class="overflow-hidden inset-0">
-              <a href="#">
-                <img
-                  src="src/img/thailand.jpg"
-                  class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50"
-                />
-              </a>
-            </div>
-            <div class="overflow-hidden inset-0">
-              <a href="#">
-                <img
-                  src="src/img/australia.jpg"
-                  class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50"
-                />
-              </a>
-            </div>
-            <div class="overflow-hidden inset-0">
-              <a href="#">
-                <img
-                  src="src/img/indonesia.jpg"
-                  class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50"
-                />
-              </a>
-            </div>
-            <div class="overflow-hidden inset-0">
-              <a href="#">
-                <img
-                  src="src/img/france.jpg"
-                  class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50"
-                />
-              </a>
-            </div>
-            <div class="overflow-hidden inset-0">
-              <a href="#">
-                <img
-                  src="src/img/malaysia.jpg"
-                  class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50"
-                />
-              </a>
-            </div>
-            <div class="overflow-hidden inset-0">
-              <a href="#">
-                <img
-                  src="src/img/UAE.jpg"
-                  class="w-full h-full bg-cover bg-center z-10 transform duration-500 transition-all hover:scale-125 hover:brightness-50"
-                />
-              </a>
+  <section id="testimonial">
+    <div class="container md:py-12 mx-auto max-w-5xl px-8">
+      <h2 class="text-[#4a4a4a] text-4xl py-6 text-center">
+        What Our Client Says
+      </h2>
+      <p class="text-[#4a4a4a] text-center">
+        People’s sharing their thought about our works
+      </p>
+      <div class="shadow-md">
+        <div class="flex flex-col md:flex-row md:my-24 my-4 p-10 justify-between">
+          <img src="src/img/testimonial1.jpg" alt=""
+            class="w-40 h-40 aspect-square bg-cover bg-center rounded-lg mx-auto my-4" />
+          <div class="flex flex-col justify-between md:px-12">
+            <p>
+              Integrate 360 campaign viral disrupt pair programming latte
+              paradigm hacker 360 campaign cortado bootstrapping.
+              Thinker-maker-doer paradigm affordances viral bootstrapping ship
+              it human-centered design waterfall is so 2000 and late
+              responsive integrate parallax.
+            </p>
+            <div>
+              <p class="text-[#fbad27]">Dimitri Vegas</p>
+              <p>London, England</p>
             </div>
           </div>
         </div>
-        <hr class="text-[#b2b2b2]" />
       </div>
-    </section>
-    <section id="blog">
-      <div class="container py-12 mx-auto px-48">
-        <h2 class="text-[#4a4a4a] text-4xl py-6 text-center">
-          Latest News From Blog
+    </div>
+  </section>
+  <section id="subscribe">
+    <div class="bg-[#fbad27]">
+      <div class="container py-12 mx-auto max-w-5xl px-8 flex items-center justify-between flex-col md:flex-row gap-4">
+        <h2 class="text-white text-center md:text-left text-2xl">
+          Get special discount on your first journey
         </h2>
-        <p class="text-[#4a4a4a] text-center">
-          See Whats People Are Sharing Their Thoughts
-        </p>
-
-        <div class="grid grid-cols-2 gap-12 my-4">
-          <div>
-            <div class="flex flex-col">
-              <img
-                src="src/img/blog6.jpg"
-                alt=""
-                class="w-auto h-1/2 mb-6 object-cover aspect-square"
-              />
-
-              <div class="flex shadow">
-                <div class="py-6 px-4 flex-1">
-                  <h3 class="font-bold">
-                    Most Beautiful Place In The World - Istunbul
-                  </h3>
-                  <p>
-                    Venture capital food-truck minimum viable product ideate
-                    pitch deck experiential cortado affordances parallax
-                  </p>
-                </div>
-                <img
-                  src="src/img/blog5.jpg"
-                  alt=""
-                  class="w-full h-auto aspect-square overflow-hidden flex-1"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-2 gap-12">
-            <div class="flex flex-col justify-between">
-              <div class="shadow">
-                <img src="src/img/blog3.jpg" alt="" class="aspect-square" />
-                <div class="py-6 px-4 flex-1">
-                  <h3 class="font-bold">The Statue Of Liberty Travel</h3>
-                  <p>
-                    Qualitative ship it user story grok SpaceTeam waterfall is
-                    so 2000 and late quantitative vs.
-                  </p>
-                </div>
-              </div>
-              <img
-                src="src/img/blog4.jpg"
-                alt=""
-                class="w-full h-auto overflow-hidden"
-              />
-            </div>
-
-            <div class="flex flex-col justify-between">
-              <img src="src/img/blog2.jpg" alt="" />
-              <div class="shadow">
-                <img
-                  src="src/img/blog1.jpg"
-                  alt=""
-                  class="w-auto h-auto aspect-square overflow-hiddens"
-                />
-                <div class="py-6 px-4 flex-1">
-                  <h3 class="font-bold">The Best Natural Paradise - Shimla</h3>
-                  <p>
-                    Ship it integrate prototype fund human-centered design
-                    integrate big data convergence.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center my-8">
-          <a
-            href="#"
-            class="bg-[#fbad27] hover:bg-[#ebbe35] text-white font-bold px-12 py-3 rounded-full mx-auto my-4"
-            >Plan Your Trip</a
-          >
-        </div>
-        <hr class="text-[#b2b2b2]" />
+        <a href="#"
+          class="bg-[#fbad27] hover:bg-[#ebbe35] text-white outline outline-white outline-2 font-bold px-12 py-1 rounded-full">Book
+          Now</a>
       </div>
-    </section>
-    <section id="testimonial">
-      <div class="container py-12 mx-auto px-48">
-        <h2 class="text-[#4a4a4a] text-4xl py-6 text-center">
-          What Our Client Says
-        </h2>
-        <p class="text-[#4a4a4a] text-center">
-          People’s sharing their thought about our works
-        </p>
-        <div class="shadow-md">
-          <div class="flex my-24 p-10 justify-between">
-            <img
-              src="src/img/testimonial1.jpg"
-              alt=""
-              class="w-40 h-40 aspect-square bg-cover bg-center rounded-lg"
-            />
-            <div class="flex flex-col justify-between px-12">
-              <p>
-                Integrate 360 campaign viral disrupt pair programming latte
-                paradigm hacker 360 campaign cortado bootstrapping.
-                Thinker-maker-doer paradigm affordances viral bootstrapping ship
-                it human-centered design waterfall is so 2000 and late
-                responsive integrate parallax.
-              </p>
-              <div>
-                <p class="text-[#fbad27]">Dimitri Vegas</p>
-                <p>London, England</p>
-              </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container pt-12 mx-auto max-w-5xl px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 my-24 gap-8 md:gap-0">
+        <div>
+          <h3 class="font-medium">About Us</h3>
+          <div class="flex flex-col">
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-medium">Address</h3>
+          <div class="flex flex-col">
+            <p>4433 Heavner Court</p>
+            <p>Plainview, New York</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-medium">Contact Us</h3>
+          <p>Email: help@agency.com</p>
+          <p>Cell: +516-260-0598</p>
+        </div>
+        <div>
+          <h3 class="font-medium">Follow Us</h3>
+          <div class="flex">
+            <div>
+              <a href="#"
+                class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]">
+                <i class="fa-brands fa-twitter text-white text-center mx-auto"></i>
+              </a>
+            </div>
+            <div class="mx-2">
+              <a href="#"
+                class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]">
+                <i class="fa-brands fa-facebook text-white"></i>
+              </a>
+            </div>
+            <div>
+              <a href="#"
+                class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]">
+                <i class="fa-brands fa-instagram text-white"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="subscribe">
-      <div class="bg-[#fbad27]">
-        <div
-          class="container py-12 mx-auto px-48 flex items-center justify-between"
-        >
-          <h2 class="text-white text-2xl">
-            Get special discount on your first journey
-          </h2>
-          <a
-            href="#"
-            class="bg-[#fbad27] hover:bg-[#ebbe35] text-white outline outline-white outline-2 font-bold px-12 py-1 rounded-full"
-            >Book Now</a
-          >
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container pt-12 mx-auto px-48">
-        <div class="grid grid-cols-4 my-24">
-          <div>
-            <h3 class="font-medium">About Us</h3>
-            <div class="flex flex-col">
-              <a href="#">About Us</a>
-              <a href="#">Blog</a>
-              <a href="#">Contact Us</a>
-            </div>
-          </div>
-          <div>
-            <h3 class="font-medium">Address</h3>
-            <div class="flex flex-col">
-              <p>4433 Heavner Court</p>
-              <p>Plainview, New York</p>
-            </div>
-          </div>
-          <div>
-            <h3 class="font-medium">Contact Us</h3>
-            <p>Email: help@agency.com</p>
-            <p>Cell: +516-260-0598</p>
-          </div>
-          <div>
-            <h3 class="font-medium">Follow Us</h3>
-            <div class="flex">
-              <div>
-                <a
-                  href="#"
-                  class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]"
-                >
-                  <i
-                    class="fa-brands fa-twitter text-white text-center mx-auto"
-                  ></i>
-                </a>
-              </div>
-              <div class="mx-2">
-                <a
-                  href="#"
-                  class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]"
-                >
-                  <i class="fa-brands fa-facebook text-white"></i>
-                </a>
-              </div>
-              <div>
-                <a
-                  href="#"
-                  class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]"
-                >
-                  <i class="fa-brands fa-instagram text-white"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="text-[#b2b2b2]" />
-        <p class="text-sm text-center my-16">
-          Copyright@Parag 2016, All Rights Reserved
-        </p>
-      </div>
-    </footer>
-  </body>
+      <hr class="text-[#b2b2b2]" />
+      <p class="text-sm text-center my-16">
+        Copyright@Parag 2016, All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
