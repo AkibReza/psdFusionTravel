@@ -14,7 +14,9 @@
 
 <body>
   <!-- Header -->
-  <header class="bg-[#b2b2b2] h-164">
+  <header class="bg-secondary h-164 bg-no-repeat bg-center bg-cover bg-blend-multiply"
+    style="background-image: url('./src/img/banner.jpg')">
+
     <!-- Navbar -->
     <nav class="container mx-auto py-4 p-6">
       <div class="justify-between mb-6 hidden md:flex ">
@@ -40,7 +42,7 @@
         <span class="hamburger-middle"></span>
         <span class="hamburger-bottom"></span>
       </button>
-      </div>
+
 
       <div class="md:hidden">
         <div id="menu"
@@ -55,22 +57,23 @@
       </div>
 
 
-      <hr class="border-[#8795a9]" />
+      <hr class="border-navRule" />
     </nav>
     <div class="my-32 flex flex-col">
       <h1 class="text-6xl text-white mx-auto w-max my-2">Fusion Travel</h1>
       <p class="text-xl text-white mx-auto w-max my-2">
         Lets discover the world together
       </p>
-      <a href="#" class="bg-[#fbad27] hover:bg-[#ebbe35] text-white font-bold px-12 py-3 rounded-full mx-auto my-4">Plan
+      <a href="#" class="bg-btnPrimary hover:bg-btnHover text-white font-bold px-12 py-3 rounded-full mx-auto my-4">Plan
         Your Trip</a>
     </div>
+
   </header>
 
   <section id="welcome">
     <div class="flex flex-col items-center container mx-auto py-28 max-w-5xl px-8">
-      <h2 class="text-[#4a4a4a] text-4xl py-6">Welcome To Fusion</h2>
-      <p class="text-[#4a4a4a] text-center">
+      <h2 class="text-primary text-4xl py-6">Welcome To Fusion</h2>
+      <p class="text-primary text-center">
         Nam consectetur elementum neque vitae condimentum. Aenean dignissim,
         turpis et tincidunt finibus, massa purus malesuada metus, a commodo
         velit magna nec nibh. Donec dictum fringilla tempus. Nunc rhoncus
@@ -81,7 +84,7 @@
       <div class="flex flex-col md:flex-row md:space-x-6 py-16 ">
         <div class="shadow">
           <div class="px-8 py-12">
-            <i class="fa-solid fa-plane text-[#fbad27] text-4xl"></i>
+            <i class="fa-solid fa-plane text-btnPrimary text-4xl"></i>
             <p class="font-bold my-2">Best Price Gurantee</p>
             <p>
               SpaceTeam bootstrapping user centered design sticky note
@@ -91,7 +94,7 @@
         </div>
         <div class="shadow-xl mx-2">
           <div class="px-8 py-12">
-            <i class="fa-solid fa-heart text-[#fbad27] text-4xl"></i>
+            <i class="fa-solid fa-heart text-btnPrimary text-4xl"></i>
             <p class="font-bold my-2">Best Travel Agency</p>
             <p>
               User story Steve Jobs Stev Jobs iterate human-centered design
@@ -101,7 +104,7 @@
         </div>
         <div class="shadow">
           <div class="px-8 py-12">
-            <i class="fa-solid fa-star text-[#fbad27] text-4xl"></i>
+            <i class="fa-solid fa-star text-btnPrimary text-4xl"></i>
             <p class="font-bold my-2">Trust & Safety</p>
             <p>
               Thought leader cortado viral viral earned media long shadow
@@ -115,10 +118,10 @@
 
   <section id="destination">
     <div class="container mx-auto max-w-5xl px-8">
-      <hr class="text-[#b2b2b2]" />
+      <hr class="text-secondary" />
       <div class="flex flex-col items-center">
-        <h2 class="text-[#4a4a4a] text-4xl py-6 text-center">Find Your Destination</h2>
-        <p class="text-[#4a4a4a] text-center">
+        <h2 class="text-primary text-4xl py-6 text-center">Find Your Destination</h2>
+        <p class="text-primary text-center">
           Most Popular Places Are Waiting For You
         </p>
 
@@ -169,84 +172,98 @@
           </div>
         </div>
       </div>
-      <hr class="text-[#b2b2b2]" />
+      <hr class="text-secondary" />
     </div>
   </section>
 
   <section id="blog">
     <div class="container py-12 mx-auto max-w-5xl px-8">
-      <h2 class="text-[#4a4a4a] text-4xl py-6 text-center">
+      <h2 class="text-primary text-4xl py-6 text-center">
         Latest News From Blog
       </h2>
-      <p class="text-[#4a4a4a] text-center">
+      <p class="text-primary text-center">
         See Whats People Are Sharing Their Thoughts
       </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-4 ">
-        <div>
-          <div class="flex flex-col ">
-            <img src="src/img/blog6.jpg" alt="" class="w-auto h-1/2 mb-6 object-cover aspect-square" />
-
-            <div class="flex shadow flex-col md:flex-row">
-              <div class="py-6 px-4 md:flex-1">
-                <h3 class="font-bold">
-                  Most Beautiful Place In The World - Istunbul
-                </h3>
-                <p>
-                  Venture capital food-truck minimum viable product ideate
-                  pitch deck experiential cortado affordances parallax
-                </p>
+      <div class="flex flex-col md:flex-row gap-6 my-4 ">
+        <div class="flex flex-col-reverse md:flex-col basis-1/2">
+          <div class="overflow-hidden">
+            <a href="#">
+              <img src="src/img/blog6.jpg" alt="" class="w-full h-auto mb-6 object-cover aspect-square " />
+            </a>
+            <a href="#" class=" hover:text-blue-700 duration-200 transition-all">
+              <div class="flex shadow flex-col md:flex-row cursor-pointer ">
+                <div class="py-6 px-4 md:flex-1">
+                  <h3 class="font-bold">
+                    Most Beautiful Place In The World - Istunbul
+                  </h3>
+                  <p>
+                    Venture capital food-truck minimum viable product ideate
+                    pitch deck experiential cortado affordances parallax
+                  </p>
+                </div>
+                <img src="src/img/blog5.jpg" alt="" class="w-full h-auto aspect-square overflow-hidden md:flex-1" />
               </div>
-              <img src="src/img/blog5.jpg" alt="" class="w-full h-auto aspect-square overflow-hidden md:flex-1" />
-            </div>
+            </a>
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div class="flex flex-col justify-between">
-            <div class="shadow">
-              <img src="src/img/blog3.jpg" alt="" class="aspect-square my-2" />
-              <div class="py-6 px-4 flex-1">
-                <h3 class="font-bold">The Statue Of Liberty Travel</h3>
-                <p>
-                  Qualitative ship it user story grok SpaceTeam waterfall is
-                  so 2000 and late quantitative vs.
-                </p>
+        <div class="flex flex-col md:flex-row gap-6 basis-1/2">
+          <div class="flex flex-col justify-between basis-1/2 gap-2 cursor-pointer">
+            <a href="#" class=" hover:text-blue-700 duration-200 transition-all">
+              <div class="shadow">
+                <img src="src/img/blog3.jpg" alt="" class="aspect-square my-2" />
+                <div class="py-6 px-4 flex-1">
+                  <h3 class="font-bold">The Statue Of Liberty Travel</h3>
+                  <p>
+                    Qualitative ship it user story grok SpaceTeam waterfall is
+                    so 2000 and late quantitative vs.
+                  </p>
+                </div>
               </div>
-            </div>
-            <img src="src/img/blog4.jpg" alt="" class="w-full h-auto overflow-hidden" />
+            </a>
+            <a href="#">
+              <img src="src/img/blog4.jpg" alt="" class="w-full h-auto overflow-hidden" />
+            </a>
           </div>
 
-          <div class="flex flex-col justify-between">
-            <img src="src/img/blog2.jpg" alt="" class="my-2" />
-            <div class="shadow">
-              <img src="src/img/blog1.jpg" alt="" class="w-auto h-auto aspect-square overflow-hiddens" />
-              <div class="py-6 px-4 flex-1">
-                <h3 class="font-bold">The Best Natural Paradise - Shimla</h3>
-                <p>
-                  Ship it integrate prototype fund human-centered design
-                  integrate big data convergence.
-                </p>
+          <div class="flex flex-col justify-between basis-1/2 cursor-pointer">
+            <a href="#">
+              <img src="src/img/blog2.jpg" alt="" class="my-2" />
+            </a>
+            <a href="#" class=" hover:text-blue-700 duration-200 transition-all">
+              <div class="shadow">
+                <img src="src/img/blog1.jpg" alt="" class="w-auto h-auto aspect-square overflow-hiddens" />
+                <div class="py-6 px-4 flex-1">
+                  <h3 class="font-bold">The Best Natural Paradise - Shimla</h3>
+                  <p>
+                    Ship it integrate prototype fund human-centered design
+                    integrate big data convergence.
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
+
       </div>
+
       <div class="text-center my-8">
         <a href="#"
-          class="bg-[#fbad27] hover:bg-[#ebbe35] text-white font-bold px-12 py-3 rounded-full mx-auto my-4">Plan Your
+          class="bg-btnPrimary hover:bg-btnHover text-white font-bold px-12 py-3 rounded-full mx-auto my-4">Plan
+          Your
           Trip</a>
       </div>
-      <hr class="text-[#b2b2b2]" />
+      <hr class="text-secondary" />
     </div>
   </section>
 
   <section id="testimonial">
     <div class="container md:py-12 mx-auto max-w-5xl px-8">
-      <h2 class="text-[#4a4a4a] text-4xl py-6 text-center">
+      <h2 class="text-primary text-4xl py-6 text-center">
         What Our Client Says
       </h2>
-      <p class="text-[#4a4a4a] text-center">
+      <p class="text-primary text-center">
         People’s sharing their thought about our works
       </p>
       <div class="shadow-md">
@@ -262,7 +279,7 @@
               responsive integrate parallax.
             </p>
             <div>
-              <p class="text-[#fbad27]">Dimitri Vegas</p>
+              <p class="text-btnPrimary">Dimitri Vegas</p>
               <p>London, England</p>
             </div>
           </div>
@@ -271,13 +288,13 @@
     </div>
   </section>
   <section id="subscribe">
-    <div class="bg-[#fbad27]">
+    <div class="bg-btnPrimary">
       <div class="container py-12 mx-auto max-w-5xl px-8 flex items-center justify-between flex-col md:flex-row gap-4">
         <h2 class="text-white text-center md:text-left text-2xl">
           Get special discount on your first journey
         </h2>
         <a href="#"
-          class="bg-[#fbad27] hover:bg-[#ebbe35] text-white outline outline-white outline-2 font-bold px-12 py-1 rounded-full">Book
+          class="bg-btnPrimary hover:bg-btnHover text-white outline outline-white outline-2 font-bold px-12 py-1 rounded-full">Book
           Now</a>
       </div>
     </div>
@@ -308,28 +325,28 @@
         <div>
           <h3 class="font-medium">Follow Us</h3>
           <div class="flex">
-            <div>
+            <div class="">
               <a href="#"
-                class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]">
-                <i class="fa-brands fa-twitter text-white text-center mx-auto"></i>
+                class="bg-footer rounded-full transform duration-200 transition-all hover:bg-btnPrimary w-8 h-8 inline-flex items-center justify-center">
+                <i class="fa-brands fa-twitter text-white text-center mx-auto "></i>
               </a>
             </div>
             <div class="mx-2">
               <a href="#"
-                class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]">
+                class="bg-footer rounded-full transform duration-200 transition-all hover:bg-btnPrimary w-8 h-8 inline-flex items-center justify-center">
                 <i class="fa-brands fa-facebook text-white"></i>
               </a>
             </div>
             <div>
               <a href="#"
-                class="bg-[#616161] p-1 rounded-full transform duration-200 transition-all hover:bg-[#fbad27]">
+                class="bg-footer rounded-full transform duration-200 transition-all hover:bg-btnPrimary w-8 h-8 inline-flex items-center justify-center">
                 <i class="fa-brands fa-instagram text-white"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <hr class="text-[#b2b2b2]" />
+      <hr class="text-secondary" />
       <p class="text-sm text-center my-16">
         Copyright@Parag 2016, All Rights Reserved
       </p>
