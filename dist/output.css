@@ -728,8 +728,8 @@ video {
   aspect-ratio: 1 / 1;
 }
 
-.h-164 {
-  height: 41rem;
+.h-screen {
+  height: 100vh;
 }
 
 .h-full {
@@ -1066,11 +1066,6 @@ video {
   outline-color: #fff;
 }
 
-.brightness-75 {
-  --tw-brightness: brightness(.75);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1106,7 +1101,7 @@ video {
   left: 0;
   width: 24px;
   height: 2px;
-  background: #000;
+  background: rgb(255, 255, 255);
   transform: rotate(0);
   transition: all 0.25s;
 }
